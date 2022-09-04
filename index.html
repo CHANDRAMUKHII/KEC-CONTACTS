@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="application/javascript"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="application/javascript"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="application/javascript"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="application/javascript"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      type="application/javascript"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module"></script>
+    <title>Kec Contacts admin</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <nav class="navbar py-3">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/png;base64,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"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        <span>KEC Contacts Admin</span>
+      </a>
+      <button id="addbutton">ADD</button>
+    </nav>
+    <!-- Header end -->
+
+    <!-- <div class="main"></div> -->
+    <div id="box"></div>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Edit</h1>
+
+        <label for="usernamenew"><b>UserName</b></label>
+        <input type="text" id="usernamenew" required />
+        <label for="emailnew"><b>Email</b></label>
+        <input type="text" id="emailnew" required />
+        <label for="phonenumbernew"><b>phoneNumber</b></label>
+        <input type="text" id="phonenumbernew" required />
+        <label for="designationnew"><b>Designation</b></label>
+        <input type="text" id="designationnew" required />
+        <label for="departmentnew"><b>Department</b></label>
+        <input type="text" id="departmentnew" required />
+        <label for="categorynew"><b>category</b></label>
+        <input type="text" id="categorynew" required />
+        <!-- <label for="imagenew"><b>Image</b></label>
+        <input type="file" id="imagenew" /> -->
+        <button type="submit" class="btn" id="updatebut">Update</button>
+        <button type="button" class="btn cancel" id="closeedit">Close</button>
+      </form>
+    </div>
+
+    <div class="form-popupp" id="myForm1">
+      <form class="add">
+        <h1>Add</h1>
+
+        <label for="usernameadd"><b>UserName</b></label>
+        <input type="text" id="usernameadd" required />
+        <label for="emailadd"><b>Email</b></label>
+        <input type="text" id="emailadd" required />
+        <label for="phonenumberadd"><b>phoneNumber</b></label>
+        <input type="text" id="phonenumberadd" required />
+        <label for="designationadd"><b>Designation</b></label>
+        <input type="text" id="designationadd" required />
+        <label for="departmentadd"><b>Department</b></label>
+        <input type="text" id="departmentadd" required />
+        <label for="categoryadd"><b>category</b></label>
+        <input type="text" id="categoryadd" required />
+        <label for="imageadd"><b>Image</b></label>
+        <input type="file" id="imageadd" required />
+        <label id="upprogress"></label>
+
+        <button type="submit" id="addbut">Add</button>
+        <button type="submit" class="btn cancel" id="closeadd">Close</button>
+      </form>
+    </div>
+
+    <!-- Footer start -->
+    <!-- <div class="footer-dark py-3">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col item social">
+              <a href="https://kongu.ac.in/"> <i class="fa fa-google"></i></a>
+              <a
+                href="https://www.linkedin.com/school/kongu-engineering-collegeerode/mycompany/"
+                ><i class="fa fa-linkedin"></i></a
+              ><a
+                href="https://www.instagram.com/konguengineeringcollege/?hl=en"
+                ><i class="fa fa-instagram"></i></a
+              ><a href="#"><i class="fa-solid fa-facebook"></i></a>
+            </div>
+          </div>
+          <p class="copyright">Kongu Engineering College © 2022</p>
+        </div>
+      </footer>
+    </div> -->
+    <!-- footer end -->
+
+    <script
+      type="application/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+  </body>
+</html>
